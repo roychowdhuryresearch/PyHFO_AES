@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ODMO project page</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/float_gif.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="page_container">
+      <header>
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="text-center">PyHFO: Lightweight Deep Learning-powered End-to-End High-Frequency Oscillations Analysis Application.</h2>
+                <h5 class="text-center">&nbsp;</h5>
+                <h5 class="text-center"><a href="https://www.linkedin.com/in/zyp5511/">Yipeng Zhang</a>,
+                                      <a href="https://www.linkedin.com/in/mingjian-lu-357182102/">Lawrence Liu</a>,
+                                      <a href="https://www.linkedin.com/in/mingjian-lu-357182102/">Yuanyi Ding</a>, 
+                                      <a href="https://www.linkedin.com/in/xin-chen-980521/">Xin Chen</a>,
+                                      <a href="https://www.linkedin.com/in/tonmoy-monsoor-5730a82b/">Tonmoy Monsoor</a>,
+                                      <a href="https://orcid.org/0000-0003-1350-7700">Atsuro Daida</a>,
+                                      <a href="https://www.researchgate.net/search?q=Shingo-Oana">Shingo Oana</a>,
+                                      <a href="https://www.uclahealth.org/providers/shaun-hussain">Shaun Hussain</a>,
+                                      <a href="https://www.uclahealth.org/providers/raman-sankar">Raman Sankar</a>,
+                                      <a href="https://www.uclahealth.org/providers/aria-fallah">Fallah Aria</a>,
+                                      <a href="https://neurobio.ucla.edu/people/jerome-engel-m-d-ph-d/">Jerome Engel</a>,
+                                      <a href="https://profiles.ucla.edu/richard.staba">Richard J. Staba</a>,
+                                      <a href="https://mii.ucla.edu/people/william-speier-phd/">William Speier</a>,
+                                      <a href="https://www.sustech.edu.cn/en/faculties/zhangjianguo.html">Jianguo Zhang</a>,
+                                      <a href="https://www.uclahealth.org/providers/hiroki-nariai">Hiroki Nariai</a>,
+                                      <a href="http://www.vwaniroychowdhury.com/">Vwani Roychowdhury</a>
+                                    
+                                    
+                                    </h5>
+              </div>
+            </div>
+            <hr>
+                <p class="text-center" style="font-size:20px">
+                <a href="https://github.com/roychowdhuryresearch/pyHFO">[Project]</a>
+                <a href="https://www.biorxiv.org/content/10.1101/2023.08.25.554741v1">[Arxiv]</a>
+                <a href="https://github.com/roychowdhuryresearch/pyHFO/releases">[Download]</a>
+                </p>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+              <video controls="controls" width="80%">
+                <source src="./assets/PyHFO-Demo.mp4" type="video/mp4">
+              </video>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <p>&nbsp;</p>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+              <h2>Abstract</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-1 col-xl-10"> 
+              <p class="text-left"><em>In the context of epilepsy studies, intracranially-recorded interictal high-frequency oscillations (HFOs) in EEG signals are emerging as promising spatial neurophysiological biomarkers for epileptogenic zones. While significant efforts have been made in identifying and understanding these biomarkers, deep learning is carving novel avenues for biomarker detection and analysis. Yet, transitioning such methodologies to clinical environments is difficult due to the rigorous computational needs of processing EEG data via deep learning. This paper presents our development of an advanced end to end software platform, PyHFO, aimed at bridging this gap. PyHFO provides an integrated and user-friendly platform that includes time-efficient HFO detection algorithms such as short-term energy (STE) and Montreal Neurological Institute and Hospital (MNI) detectors and deep learning models for artifact and HFO with spike classification. This application functions seamlessly on conventional computer hardware. Our platform has been validated to adeptly handle datasets from 10-minute EEG recordings captured via grid/strip electrodes in 19 patients. Through implementation optimization, PyHFO achieves speeds up to 50 times faster than the standard HFO detection method. Users can either employ our pre-trained deep learning model for their analyses or use their EEG data to train their model. As such, PyHFO holds great promise for facilitating the use of advanced EEG data analysis tools in clinical practice and large-scale research collaborations.</em></p>
+              <p class="text-left">&nbsp;</p>
+              <p class="text-left">&nbsp;</p>
+              <img src="assets/overview.png" width="100%" alt=""/>
+              <p>Fig 1. : The overview of the application</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <hr>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mb-4 mt-2 text-center">
+                <h2>Benchmark HFO detection speed</h2>
+              </div>
+            </div>
+        </div>
+          <!-- Display a visualizations gallery of 5 pictures -->
+        <div class="container">
+          <div class="col-lg-16 col-md-16 col-sm-16 text-center offset-xl-1 col-xl-10 text-center"> 
+            <head>
+              <style>
+                table {
+                  border-collapse: collapse;
+                }
+                th, td {
+                  border: 1px solid black;
+                  padding: 10px;
+                }
+                .table-container {
+                  display: flex;
+                  justify-content: center; /* centers the table horizontally */
+                }
+              </style>
+            </head>
+            <body>
+              <div class="table-container">
+                <table>
+                  <tr>
+                      <th></th>
+                      <td>Linux</td>
+                      <td>Linux</td>
+                      <td>Windows</td>
+                      <td>Windows</td>
+                      <td>OS X</td>
+                      <td>OS X</td>
+                  </tr>
+                  <tr>
+                      <th></th>
+                      <td>STE</td>
+                      <td>MNI</td>
+                      <td>STE</td>
+                      <td>MNI</td>
+                      <td>STE</td>
+                      <td>MNI</td>
+                  </tr>
+                  <tr>
+                      <th>RIPPLELAB</th>
+                      <td>372.83</td>
+                      <td>5647.12</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <th>pyHFO single-core</th>
+                      <td>57.43</td>
+                      <td>971.35</td>
+                      <td>34.57</td>
+                      <td>933.31</td>
+                      <td>35.90</td>
+                      <td>659.63</td>
+                  </tr>
+                  <tr>
+                      <th>pyHFO multi-core</th>
+                      <td>5.18</td>
+                      <td>83.30</td>
+                      <td>9.03</td>
+                      <td>113.59</td>
+                      <td>7.56</td>
+                      <td>114.35</td>
+                  </tr>
+                </table>
+              </div>
+              <p>&nbsp;</p>
+                <p>Table 1: omparative Analysis of Runtime in RIPPLELAB and PyHFO: Detection of All Events from 10-Minute Data Segments Across 19 Patients (measured in minutes).</p>  
+            </body> 
+          </div>
+        </div>
+        <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+              <h2>BibTex</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-left">
+              <p><span style="color:#000000;font-family:'Courier New';font-size:15px;">
+                @article{zhang2023pyhfo,<br>
+                  title={PyHFO: Lightweight Deep Learning-powered End-to-End High-Frequency Oscillations Analysis Application},<br>
+                  author={Zhang, Yipeng and Liu, Lawrence and Ding, Yuanyi and Chen, Xin and Monsoor, Tonmoy and Daida, Atsuro and Oana, Shingo and Hussain, Shaun Alexander and Sankar, Raman and Fallah, Aria and others},<br>
+                  journal={bioRxiv},<br>
+                  pages={2023--08},<br>
+                  year={2023},<br>
+                  publisher={Cold Spring Harbor Laboratory}<br>
+                }
+               </span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron"> </div>
+      </section>	
+    </div>
+    <script src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>  
+  </body>
+</html>
